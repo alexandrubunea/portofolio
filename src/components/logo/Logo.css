@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+.name {
+    font-family: "Monomaniac One", sans-serif;
+    color: #F26666;
+    background-color: #6F6BF2;
+}
+
+.title {
+    font-family: "Monomaniac One", sans-serif;
+    color: #F288E0;
+    background-color: #474747;
+}
+
+.bounce-animation:hover {
+    animation: bounce-animation 1.5s;
+}
+
+@keyframes bounce-animation {
+    0% {
+        transform: skew(25deg) translateX(0);
+    }
+
+    50% {
+        transform: skew(25deg) translateY(-2.5em);
+    }
+
+    60% {
+        transform: skew(25deg) translateY(0);
+    }
+
+    70% {
+        transform: skew(25deg) translateY(-2em);
+    }
+
+    80% {
+        transform: skew(25deg) translateY(0);
+    }
+
+    85% {
+        transform: skew(25deg) translateY(-1em);
+    }
+
+    90% {
+        transform: skew(25deg) translateY(0);
+    }
+
+    95% {
+        transform: skew(25deg) translateY(-.5em);
+    }
+
+    100% {
+        transform: skew(25deg) translateY(0);
+    }
+}

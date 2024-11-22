@@ -1,6 +1,7 @@
 import './App.css'
 
 import MenuButton from './components/menu_button/MenuButton'
+import Logo from './components/logo/Logo'
 
 function App() {
   let buttons: string[] = [
@@ -20,6 +21,14 @@ function App() {
                 <MenuButton key={index} text={button} />
               </div>
             ))}
+          </div>
+          <div className="w-full sm:w-auto">
+            <div className="row-auto">
+              <Logo name="Alexandru Bunea" title="Software Developer"/>
+            </div>
+            <div className="row-auto">
+              
+            </div>
           </div>
         </div>
       </div>
