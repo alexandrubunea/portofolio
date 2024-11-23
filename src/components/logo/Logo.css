@@ -12,17 +12,39 @@
     background-color: #474747;
 }
 
-.bounce-animation:hover {
-    animation: bounce-animation 1.5s;
+.bounce {
+    transition: transform 500ms;
+}
+
+.bounce:hover {
+    transform: skew(25deg) translateY(-2.5em);
+    animation: bounce-animation 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+.bounce:not(:hover) {
+    animation: none;
 }
 
 @keyframes bounce-animation {
     0% {
-        transform: skew(25deg) translateX(0);
+        transform: skew(25deg) translateY(-2.5em);
+    }
+
+    20% {
+        transform: skew(25deg) translateY(0);
+    }
+
+    30% {
+        transform: skew(25deg) translateY(-1em);
+    }
+
+    40% {
+        transform: skew(25deg) translateY(0);
     }
 
     50% {
-        transform: skew(25deg) translateY(-2.5em);
+        transform: skew(25deg) translateY(-.5em);
     }
 
     60% {
@@ -30,23 +52,15 @@
     }
 
     70% {
-        transform: skew(25deg) translateY(-2em);
+        transform: skew(25deg) translateY(-.2em);
     }
 
     80% {
         transform: skew(25deg) translateY(0);
     }
 
-    85% {
-        transform: skew(25deg) translateY(-1em);
-    }
-
     90% {
-        transform: skew(25deg) translateY(0);
-    }
-
-    95% {
-        transform: skew(25deg) translateY(-.5em);
+        transform: skew(25deg) translateY(-.1em);
     }
 
     100% {
