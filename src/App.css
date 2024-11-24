@@ -2,11 +2,12 @@ body {
     background: #F1C40F;
     overflow-x: hidden;
     min-height: 100vh;
-    padding: 2em;
     box-shadow: 
         inset 0 0 100vh rgba(0, 0, 0, 0.9),
         0 0 100vh rgba(0, 0, 0, 0.7);
-    animation: textShadow 5s infinite;
+    animation: textShadow 1s infinite;
+    padding: 5em;
+    position: relative;
 }
 
 body::before {
@@ -16,9 +17,10 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
     mix-blend-mode: overlay;
     pointer-events: none;
+    z-index: 1;
 }
 
 body::after {
@@ -30,16 +32,42 @@ body::after {
     height: 100%;
     background: repeating-linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2) 0.1em,
-        transparent 0.2em
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 0.3vh,
+        transparent 0.6vh
     );
     pointer-events: none;
     mix-blend-mode: multiply;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {
+    body::after {
+        background: repeating-linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1) 0.2vh,
+            transparent 0.4vh
+        );
+    }
     body {
-        box-shadow: inset 0 0 50vh rgba(0, 0, 0, 0.9), 0 0 50vh rgba(0, 0, 0, 0.7);
+        box-shadow: 
+            inset 0 0 50vh rgba(0, 0, 0, 0.8),
+            0 0 50vh rgba(0, 0, 0, 0.6);
+    }
+}
+
+@keyframes textShadow {
+    0%, 100% {
+        text-shadow: 
+            0.5px 0 rgba(0, 30, 255, 0.6),
+            -0.5px 0 rgba(255, 0, 80, 0.4),
+            0 0 4px;
+    }
+    50% {
+        text-shadow: 
+            1.5px 0 rgba(0, 30, 255, 0.6),
+            -1.5px 0 rgba(255, 0, 80, 0.4),
+            0 0 6px;
     }
 }
