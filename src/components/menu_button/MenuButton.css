@@ -6,7 +6,6 @@
     outline: solid 5px #F2F2F4;
     font-family: "Moul", serif;
     font-size: 2rem;
-    transform: perspective(20em) rotateX(30deg);
 }
 .menu-button:hover {
     background-color: #474747;
@@ -14,5 +13,4 @@
     outline: solid 5px #E87287;
     font-family: "Moul", serif;
     font-size: 2rem;
-    transform: perspective(20em) rotateX(30deg) translateY(-.5em);
 }
