@@ -14,7 +14,7 @@ function Menu() {
 		<>
 			<div className="flex flex-col justify-center items-center">
 				{buttons.map((button) => (
-					<div className="mb-4 sm:mb-0" key={button}>
+					<div className="mb-6" key={button}>
 						<MenuButton text={button} />
 					</div>
 				))}

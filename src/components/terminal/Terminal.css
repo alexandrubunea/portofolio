@@ -1,0 +1,10 @@
+.blink-cursor {
+    animation: blink-animation 1s infinite;
+}
+
+@keyframes blink-animation {
+    from {
+        opacity: 0%;
+    }
+    to {opacity: 100%;}
+}

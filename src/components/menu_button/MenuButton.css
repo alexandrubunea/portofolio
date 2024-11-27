@@ -5,12 +5,10 @@
     color: #474747;
     outline: solid 5px #F2F2F4;
     font-family: "Moul", serif;
-    font-size: 2rem;
 }
 .menu-button:hover {
     background-color: #474747;
     color: #E87287;
     outline: solid 5px #E87287;
     font-family: "Moul", serif;
-    font-size: 2rem;
 }
