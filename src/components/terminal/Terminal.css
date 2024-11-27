@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+    font-family: "Jersey 10", serif;
+}
+
 .blink-cursor {
     animation: blink-animation 1s infinite;
+}
+
+.welcome {
+    font-size: .56em;
 }
 
 @keyframes blink-animation {
